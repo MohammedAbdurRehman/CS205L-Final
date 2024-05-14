@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server:
+    image: server.py
+    ports: 
+      - 5000
+  client:
+    image: client.py
+    ports:
+      - 5000

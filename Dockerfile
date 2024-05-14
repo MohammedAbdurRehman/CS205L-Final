@@ -1,3 +1,5 @@
-FROM nginx
-WORKDIR /home/pc10/Downloads/CS205L_Final-RecipeBook/RecipeBook/index.html
-CMD ["nginx", "./index.html"]
+FROM server.py
+COPY . .
+WORKDIR /home/pc10/Downloads/CS205L_Final-master/server/app/server.py
+EXPOSE 5000
+CMD ["python", "./server.py"]
